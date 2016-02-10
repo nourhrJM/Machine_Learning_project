@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>mPurpose - Multipurpose Feature Rich Bootstrap Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!doctype html>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Sketch.JS Demo | Filip Danic</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/icomoon-social.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
@@ -21,15 +15,14 @@
 		<link rel="stylesheet" href="css/main.css">
 
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-        
+	<link rel="stylesheet" type="text/css" href="css/canvas_style.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/sketch.js"></script>
+	<!-- Author: Danic Filip, danicfilip.com -->
+</head>
 
-        <!-- Navigation & Logo-->
-        <div class="mainmenu-wrapper">
+<body>
+ <div class="mainmenu-wrapper">
 	        <div class="container">
 	        	<div class="menuextras">
 					<div class="extras">
@@ -134,8 +127,7 @@
 				</nav>
 			</div>
 		</div>
-		
-        <div class="section section-white">
+		 <div class="section section-white">
 	    	<div class="container">
 				<div class="row">
 						<p align="center"><img src="img/learning.jpg" alt="Project Name">	<p>
@@ -144,116 +136,75 @@
 			</div>
 		</div>
 
-		
+	<div id="SketchTools">
+		<!-- Basic tools -->
+		<a href="#SketchPad" data-color="#000000" title="Black"><img src="img/black_icon.png" alt="Black"/></a>
+		<a href="#SketchPad" data-color="#ff0000" title="Red"><img src="img/red_icon.png" alt="Red"/></a>
+		<a href="#SketchPad" data-color="#00ff00" title="Green"><img src="img/green_icon.png" alt="Green"/></a>
+		<a href="#SketchPad" data-color="#0000ff" title="Blue"><img src="img/blue_icon.png" alt="Blue"/></a>
+		<a href="#SketchPad" data-color="#ffff00" title="Yellow"><img src="img/yellow_icon.png" alt="Yellow"/></a>
+		<a href="#SketchPad" data-color="#00ffff" title="Cyan"><img src="img/cyan_icon.png" alt="Cyan"/></a>
+		<br/>
+		<!-- Advanced colors -->
+		<a href="#SketchPad" data-color="#e74c3c" title="Alizarin"><img src="img/alizarin_icon.png" alt="Alizarin"/></a>
+		<a href="#SketchPad" data-color="#c0392b" title="Pomegrante"><img src="img/pomegrante_icon.png" alt="Pomegrante"/></a>
+		<a href="#SketchPad" data-color="#2ecc71" title="Emerald"><img src="img/emerald_icon.png" alt="Emerald"/></a>
+		<a href="#SketchPad" data-color="#1abc9c" title="Torquoise"><img src="img/torquoise_icon.png" alt="Torquoise"/></a>
+		<a href="#SketchPad" data-color="#3498db" title="Peter River"><img src="img/peterriver_icon.png" alt="Peter River"/></a>
+		<a href="#SketchPad" data-color="#9b59b6" title="Amethyst"><img src="img/amethyst_icon.png" alt="Amethyst"/></a>
+		<a href="#SketchPad" data-color="#f1c40f" title="Sun Flower"><img src="img/sunflower_icon.png" alt="Sun Flower"/></a>
+		<a href="#SketchPad" data-color="#f39c12" title="Orange"><img src="img/orange_icon.png" alt="Orange"/></a>
+		<br/>
+		<a href="#SketchPad" data-color="#ecf0f1" title="Clouds"><img src="img/clouds_icon.png" alt="Clouds"/></a>
+		<a href="#SketchPad" data-color="#bdc3c7" title="Silver"><img src="img/silver_icon.png" alt="Silver"/></a>
+		<a href="#SketchPad" data-color="#7f8c8d" title="Asbestos"><img src="img/asbestos_icon.png" alt="Asbestos"/></a>
+		<a href="#SketchPad" data-color="#34495e" title="Wet Asphalt"><img src="img/wetasphalt_icon.png" alt="Wet Asphalt"/></a>
+		<a href="#SketchPad" data-color="#ffffff" title="Eraser"><img src="img/eraser_icon.png" alt="Eraser"/></a>
+		<br/>
+		<!-- Size options -->
+		<a href="#SketchPad" data-size="1"><img src="img/pencil_icon.png" alt="Pencil"/></a>
+		<a href="#SketchPad" data-size="3"><img src="img/pen_icon.png" alt="Pen"/></a>
+		<a href="#SketchPad" data-size="5"><img src="img/stick_icon.png" alt="Stick"/></a>
+		<a href="#SketchPad" data-size="9"><img src="img/smallbrush_icon.png" alt="Small brush"/></a>
+		<a href="#SketchPad" data-size="15"><img src="img/mediumbrush_icon.png" alt="Medium brush"/></a>
+		<a href="#SketchPad" data-size="30"><img src="img/bigbrush_icon.png" alt="Big brush"/></a>
+		<a href="#SketchPad" data-size="60"><img src="img/bucket_icon.png" alt="Huge bucket"/></a>
+		<br/>
+		<a href="#SketchPad" data-download='png' id="DownloadPng">Download .PNG</a>
+		<br/>
+	</div>
+	
+	
+	<div class="section section-white">
+	    	<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+	
+					<canvas id="SketchPad" width="250" height="250"></canvas>
 
-		<!-- Testimonials -->
-	    <div class="section">
-			<div class="container">
-			<div class="row">
-			
-				<h2>Dessinez votre chiffre </h2>
-				<style>
-body {
-        margin: 0;     
-}
- 
-#board {
-        margin: 0 auto;
-        width: 250px; 
-		
-}
- 
-#myCanvas {
-        border: 3px dotted #000;
-		
-}
-</style>
-				
-
-	        			
-			<canvas id="myCanvas" width="250px" height="250px" >
-        Sorry, your browser doesn't support canvas technology.
-				</canvas>
-					<p>Color picker: <select id="selectColor">
-                  <option id="colBlack" value="black" selected="selected">Black</option>
-                  <option id="colRed" value="red">Red</option>
-                  <option id="colBlue" value="blue">Blue</option>
-                  <option id="colGreen" value="green">Green</option>
-                  <option id="colOrange" value="orange">Orange</option>
-                  <option id="colYellow" value="yellow">Yellow</option>
-				</select>
-				<button id="clear" class="btn"> clear </button>
-				</p>
-				<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
-<script type="text/javascript">
-        window.onload = function() {
-                var myCanvas = document.getElementById("myCanvas");
-                var curColor = $('#selectColor option:selected').val();
-                if(myCanvas){
-                                var isDown      = false;
-                                var ctx = myCanvas.getContext("2d");
-                                var canvasX, canvasY;
-                                ctx.lineWidth = 5;
-                                 
-                                $(myCanvas)
-                                .mousedown(function(e){
-                                                isDown = true;
-                                                ctx.beginPath();
-                                                canvasX = e.pageX - myCanvas.offsetLeft;
-                                                canvasY = e.pageY - myCanvas.offsetTop;
-                                                ctx.moveTo(canvasX, canvasY);
-                                })
-                                .mousemove(function(e){
-                                                if(isDown != false) {
-                                                        canvasX = e.pageX - myCanvas.offsetLeft;
-                                                        canvasY = e.pageY - myCanvas.offsetTop;
-                                                        ctx.lineTo(canvasX, canvasY);
-                                                        ctx.strokeStyle = curColor;
-                                                        ctx.stroke();
-                                                }
-                                })
-                                .mouseup(function(e){
-                                                isDown = false;
-                                                ctx.closePath();
-                                });
-                }
-                 
-                $('#selectColor').change(function () {
-                                curColor = $('#selectColor option:selected').val();
-                });
-                 
-        };
-</script>
-
-          
-	        		
-			<div class="col-md-4 col-sm-6">
-	        			<div class="service-wrapper">
+				<script type="text/javascript">
+					$(function() {
+					$('#SketchPad').sketch();
+						});
+					</script>
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+					<div class="service-wrapper">
 		        			<h2> Quelques régles avant de commencer </h2>
 		        			<p>Dessinez les chiffres de 0-> 9</p>
 							<p>Essayez de dessiner le chiffre au centre du cadrant</p>
 		        			
 		        		</div>
-	        		</div>
-
-
-			
-
-			
-
-
-
-			
+					
+					</div>
+					
+					
+					
+				</div>
 			</div>
-	    </div>
-		</div>
-	    <!-- End Testimonials -->
-
-	    <!-- Our Clients -->
-	    
-
-	    <!-- Footer -->
-	    <div class="footer">
+	</div>
+	 <div class="footer">
 	    	<div class="container">
 		    	<div class="row">
 		    		<div class="col-footer col-md-3 col-xs-6">
@@ -301,17 +252,7 @@ body {
 		    	</div>
 		    </div>
 	    </div>
+        
+</body>
 
-        <!-- Javascripts -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-        <script src="js/jquery.fitvids.js"></script>
-        <script src="js/jquery.sequence-min.js"></script>
-        <script src="js/jquery.bxslider.js"></script>
-        <script src="js/main-menu.js"></script>
-        <script src="js/template.js"></script>
-
-    </body>
 </html>
