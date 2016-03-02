@@ -8,7 +8,7 @@ public class Image_test {
     public static void main(String[] args) {
         BufferedImage img = null;
         try {
-            img = ImageIO.read(new File("C:\\Users\\nour\\workspace\\Machine_Learning\\4.png"));
+            img = ImageIO.read(new File("C:\\Users\\nour\\workspace\\Machine_Learning\\digits\\1\\12.png"));
         } catch (IOException e) {
 
         }
@@ -26,21 +26,21 @@ public class Image_test {
         double percentPixel = 0;
 
         System.out.println(height  + "  " +  width + " " + img.getRGB(30, 30));
-
+        
         for (int h = 1; h<height; h++)
         {
             for (int w = 1; w<width; w++)
             {
                 amountPixel++;
-
+                int rgbValue= img.getRGB( h, w) + 0xFFFFFF + 1;
                 rgb = img.getRGB(w, h);
                 red = (rgb >> 16 ) & 0x000000FF;
                 green = (rgb >> 8 ) & 0x000000FF;
                 blue = (rgb) & 0x000000FF;
 
-                if (red == 0 && green == 0 && blue == 0)
+                if (rgbValue==0)
                 {
-                    int pix=img.getRGB(h, w);
+                    //int pix=img.getRGB(h, w);
                     System.out.print(1);
                 	amountBlackPixel ++;
                 }else
