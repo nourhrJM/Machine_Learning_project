@@ -15,7 +15,7 @@ public class Imagersteg {
  
     BufferedImage image = null;
  
-    File imagefile = new File("C:\\Users\\nour\\workspace\\Machine_Learning\\4.png");
+    File imagefile = new File("C:\\Users\\haytham\\Machine_Learning_project\\Machine_Learning\\digits\\1\\1.40.png");
     image = ImageIO.read(imagefile);
  
     int w=image.getWidth();
@@ -117,11 +117,15 @@ public class Imagersteg {
  
  
     Integer[] chain= new Integer[direct.size()];
+    String chainCode = "";
 	direct.copyInto(chain);
 	for(int i = 0; i < chain.length; i++)
 	{
 		System.out.println( "chaincode = " + chain[i]);
+		chainCode += chain[i];
 	}
+	
+	System.out.println(chainCode);
  
 	int count = 0;
  

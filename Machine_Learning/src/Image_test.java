@@ -8,7 +8,7 @@ public class Image_test {
     public static void main(String[] args) {
         BufferedImage img = null;
         try {
-            img = ImageIO.read(new File("C:\\Users\\nour\\workspace\\Machine_Learning\\digits\\1\\12.png"));
+            img = ImageIO.read(new File("C:\\Users\\haytham\\Machine_Learning_project\\Machine_Learning\\digits\\1\\1.40.png"));
         } catch (IOException e) {
 
         }
